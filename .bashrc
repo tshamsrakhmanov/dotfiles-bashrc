@@ -1,0 +1,41 @@
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# p.1: set up immediate save of history (for tmux)
+shopt -s histappend
+# p.2: add command flags to work bulletproof
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# sample of dir for clean
+#alias l='ls -lh --color=auto --group-directories-first'
+#alias ll='ls -lhA --color=auto --group-directories-first'
+
+# sample of dir for nice
+alias l="eza -l --color=always --group-directories-first --icons"
+alias ll="eza -al --color=always --group-directories-first --icons"
+
+# basics
+alias grep='grep --color=auto'
+alias zz='exit'
+alias ..='cd .. && l'
+
+# arch specific
+alias pp='sudo pacman -Suy '
+
+# gits
+alias ga='git add .'
+alias gp='git push origin main'
+
+# systems
+alias ssn='sudo shutdown now'
+alias srn='sudo reboot now'
+
+# prompt
+PS1='\[\033[0;032m\]┌\[\033[00m\]\[\033[0;31m\][\w]\[\033[00m\]\n\[\033[0;32m\]└──> \[\033[00m\]'
+
+# export to run wpaperd
+export PATH="$PATH:~/wpaperd/target/release/"
+
+# init setup for new terminal
+clear
+cd ~
