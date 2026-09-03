@@ -42,6 +42,9 @@ alias srn='sudo reboot now'
 alias ht='cat ~/.bash_history | tail -n '
 alias hg='cat ~/.bash_history | grep '
 
+# git checker alias
+alias gg='bash ~/git_checker.sh'
+
 ##############
 # PROMPT
 ##############
