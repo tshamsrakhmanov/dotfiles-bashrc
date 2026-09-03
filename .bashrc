@@ -38,6 +38,10 @@ alias gp='git push origin main'
 alias ssn='sudo shutdown now'
 alias srn='sudo reboot now'
 
+# history
+alias ht='cat ~/.bash_history | tail -n '
+alias hg='cat ~/.bash_history | grep '
+
 ##############
 # PROMPT
 ##############
