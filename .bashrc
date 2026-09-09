@@ -46,6 +46,10 @@ alias hg='cat ~/.bash_history | grep '
 alias gg='bash ~/git_checker.sh'
 alias gpush='read -p "Commit message: " msg; git add .; git commit -m "$msg"; git push origin main'
 
+
+# to find processe
+alias qq='ps -eo pid,command | grep'
+
 ##############
 # PROMPT
 ##############
