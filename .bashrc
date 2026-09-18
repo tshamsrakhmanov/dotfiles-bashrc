@@ -65,6 +65,7 @@ PS1='\[\033[0;032m\]┌\[\033[00m\]\[\033[0;31m\][\w]\[\033[00m\]\n\[\033[0;32m\
 export PATH="$PATH:~/wpaperd/target/release/"
 # export for general path of rust cargoes
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/rust_repo_train/cubeTerminal/target/release/:$PATH"
 
 ############
 # INIT
