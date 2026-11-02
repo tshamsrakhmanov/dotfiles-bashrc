@@ -50,6 +50,8 @@ alias gpush='read -p "Commit message: " msg; git add .; git commit -m "$msg"; gi
 # to find processe
 alias qq='ps -eo pid,command | grep'
 
+alias crr='cargo run release '
+
 ##############
 # PROMPT
 ##############
