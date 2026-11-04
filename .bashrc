@@ -50,7 +50,11 @@ alias gpush='read -p "Commit message: " msg; git add .; git commit -m "$msg"; gi
 # to find processe
 alias qq='ps -eo pid,command | grep'
 
+# fast run rust
 alias crr='cargo run release '
+
+# for tmux
+alias tt='tmux new-session -s main'
 
 ##############
 # PROMPT
